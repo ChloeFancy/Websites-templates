@@ -1,0 +1,18 @@
+div#mainPart div#yoga{
+	width: 60%;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+div#mainPart div#bar{
+	width: 30%;
+	margin:0 auto;
+	border: 3px solid #d3a3ff;
+}
+div#mainPart div#ad{
+	color:#21A51E;
+	font-size: 100px;
+	font-weight: bold;
+}

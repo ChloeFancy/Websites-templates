@@ -1,0 +1,21 @@
+#aboutMessage a{
+	text-decoration: none;
+	color: #077054;
+}
+#aboutMessage a:hover{
+	text-decoration: underline;
+}
+
+#aboutMessage{
+	line-height: 1.5em;
+	font-size: 18px;
+	color: #077054;
+
+}
+#aboutMessage .blog img{
+	float: left;
+	margin: 0 20px 0 0;
+}
+#aboutMessage .blog{
+	margin-bottom: 60px;
+}

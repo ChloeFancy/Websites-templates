@@ -1,0 +1,163 @@
+body{
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+/*顶部条*/
+div#fixed{
+	position: fixed;
+	top: 0;
+	background-color: #eee;
+	border-bottom: 1px dashed grey;
+	width: 100%;
+	height: 50px;
+	z-index: 20;
+}
+div#fixed a{
+	text-decoration: none;
+}
+div#fixed div#searchBox{
+	border:1px solid black;
+	display: inline-block;
+	padding-left: 50px;
+	background-image: url(images/bg-front.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+div#fixed input{
+	width: 100px;
+	margin-right: 20px;
+	border: 1px solid gray;
+	background-image: url(/images/serach-24.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+div#fixed a#free{
+	line-height: 50px;
+	font-weight: bold;
+	color: #077054;
+	margin: 0 50% 0 80px;
+}
+div#fixed a#free:hover{
+	color: black;
+}
+div#fixed a#download{
+	margin-right: 3%;
+}
+div#fixed a#download, div#fixed a#discuss{
+	color: grey;
+}
+div#fixed a#download:hover, div#fixed a#discuss:hover{
+	color: #077054;
+}
+div#fixed a{
+
+	display: inline-block;
+}
+div#fixed p{
+	display: inline-block;
+	margin: 0;
+	width: 20px;
+	overflow: hidden;
+	position: relative;
+}
+div#fixed img{
+	width:20px;
+	border-right: 20px solid transparent;
+}
+div#fixed img:hover{
+	filter: drop-shadow(20px 0 #077054);
+	position:relative;
+	left:-20px;
+}
+/*主界面*/
+div#mainPage{
+	background-color: #077054;
+	position: absolute;
+	top:50px;
+	width: 100%;
+	z-index: 10;
+}
+/*标题*/
+div#header{
+	margin: 20px auto;
+	width:500px;
+	text-align: center;
+}
+div#header a{
+	font-weight: bold;
+	text-decoration: none;
+}
+div#header a span#title1{
+	color:#99fa99;
+	font-size: 50px;
+}
+div#header a span#title2{
+	color:#b6d8cf;
+	font-size: 30px;
+}
+
+/*导航*/
+
+ul#navigator{
+	margin: 5px auto;
+	width: 800px;
+	list-style: none;
+	display: flex;
+	justify-content:space-between;
+}
+ul#navigator li{
+	display: inline-block;
+
+	text-align: center;
+	width: 130px;
+}
+
+ul#navigator li a{
+	color:#b6d8cf;
+	text-decoration: none;
+}
+ul#navigator li a:hover{
+	color: #d3a3ff;
+	cursor: pointer;
+}
+
+
+/*主要内容*/
+div#mainPart{
+	box-sizing: border-box;
+	width: 900px;
+	height: 1000px;
+	margin: 0 auto;
+	padding: 40px;
+	background-color: white;
+	border-radius: 20px;
+	position: relative;
+
+}
+div#mainPart h1{
+	color: #315f52;
+}
+div#mainPart img#yoga{
+	position: absolute;
+	top: 50%;
+	right: 50px;
+	transform: translateY(-50%);
+}
+
+/*页脚*/
+footer{
+	width:900px;
+	margin: 20px auto;
+}
+footer p#addr{
+	color:#99fa99;
+	font-weight: bold;
+}
+footer p#rights{
+	color:#a6d8c7;
+}
+footer a{
+	float: right;
+	margin-left: 10px;
+}

@@ -1,0 +1,42 @@
+#mainPart{
+	color: #315f52;
+}
+#mainPart p{
+	font-size: 30px;
+	width: 400px;
+	margin: 10px auto;
+}
+#mainPart fieldset{
+	width: 400px;
+	margin: 0 auto;
+	border: none;
+}
+#mainPart .inputContact{
+	width: 400px;
+	margin: 10px auto;
+
+}
+#mainPart .inputContact label{
+	display: block;
+	font-size: 15px;
+}
+#mainPart .inputContact input{
+	color: #315f52;
+	width: 400px;
+	height:20px;
+	padding: 10px 0;
+	margin: 20px auto;
+	background-color: #eee;
+	border: 1px solid #99fa99;
+}
+#mainPart .inputContact:last-of-type input{
+	height: 100px;
+}
+#mainPart input[type=submit]{
+	float: right;
+	color: #99fa99;
+	background-color: #077054;
+	padding: 5px;
+	border: none;
+	border-radius: 5px;
+}
