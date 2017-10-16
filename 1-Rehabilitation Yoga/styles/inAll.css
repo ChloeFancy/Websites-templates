@@ -16,27 +16,26 @@ div#fixed{
 div#fixed a{
 	text-decoration: none;
 }
-div#fixed div#searchBox{
-	border:1px solid black;
-	display: inline-block;
-	padding-left: 50px;
-	background-image: url(images/bg-front.png);
-	background-repeat: no-repeat;
-	background-position: left top;
+div#fixed div#box {
+    display: inline-block;
+    padding-left: 30px;
 }
-div#fixed input{
-	width: 100px;
-	margin-right: 20px;
-	border: 1px solid gray;
-	background-image: url(/images/serach-24.png);
-	background-repeat: no-repeat;
-	background-position: left center;
+div#fixed div#box input {
+    width: 100px;
+    padding: 5px;
+    padding-left: 22px;
+    margin-right: 20px;
+    border: 1px solid gray;
+    background-image: url(../images/search-24.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 20px 20px;
 }
 div#fixed a#free{
 	line-height: 50px;
 	font-weight: bold;
 	color: #077054;
-	margin: 0 50% 0 80px;
+	margin: 0 40% 0 80px;
 }
 div#fixed a#free:hover{
 	color: black;
