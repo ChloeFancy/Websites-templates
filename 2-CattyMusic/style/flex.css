@@ -1,0 +1,201 @@
+body{
+	font-size: 0.8em;
+}
+#container,#play{
+	display:flex;
+	flex-direction:column;
+}
+#container{
+
+	align-items: space-between;
+}
+#container > div{
+	flex:1 1 100%;
+}
+#main,#foot,#info,#album{
+	display: flex;
+}
+aside,#buttons{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+aside{
+	flex:0 0 50px;
+	flex-direction: column;
+}
+#main{
+	flex:0 0 auto;
+}
+#foot{
+	flex:0 0 90px;
+	padding: 10px;
+	background-color: lightblue;
+}
+#playFunc{
+	display: flex;
+	justify-content: space-between;
+}
+#playFunc > div{
+	display: flex;
+}
+#triangle{
+	border-left: 10px solid white;
+	border-top:10px solid transparent;
+	border-bottom: 10px solid transparent;
+	margin-right: 15px;
+}
+#plus{
+	height:21px;
+	background-color: white;
+	width:3px;
+	position: relative;
+	margin-right: 15px;
+}
+#plus:after{
+	content: "";
+	background-color: white;
+	position: absolute;
+	top:9px;
+	left:-9px;
+	width:21px;
+	height: 3px;
+}
+.dot{
+	height: 0px;
+	width: 0px;
+	border-left: 2px solid white;
+	border-right: 2px solid white;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	margin: 3px;
+	position: relative;
+	top:5px;
+}
+#info{
+	margin-right: auto;
+}
+#album{
+	background-color: gray;
+	padding: 25px;
+}
+#album img{
+	flex:0 1 auto;
+	margin-right: 40px;
+
+}
+#sideBar{
+	flex: 0 0 50px;
+}
+#play{
+	flex: 1 1 auto;
+
+}
+.albumName,.detail{
+	color: white;
+}
+.detail{
+	font-size: 1em;
+}
+
+#playlist{
+	display: flex;
+	flex:1 0 auto;
+	flex-direction: column;
+	list-style: none;
+}
+#playlist > div{
+	display: flex;
+	padding: 15px;
+}
+/*
+	伪类选择符：注意不该加空格的地方就不要加
+	div :nth-child(2n)——意味着div的所有后代中，所有是第2n个子元素的元素会被选择
+	div:nth-child(2n)——意味着作为第2n个的div会被选择;
+*/
+#playlist > div:nth-child(2n){
+	background-color: #eee;
+}
+#playlist > div > div{
+	flex:0 0 25%;
+}
+#buttons{
+	flex:0 0 60%;
+}
+#lastSong{
+	width: 0px;
+	height: 16px;
+	border-left:3px solid black;
+	position: relative;
+}
+#lastSong:after{
+	/*伪元素默认为行内元素，所以不能直接用border*/
+	content: "";
+	width: 0px;
+	height: 0px;
+	display: inline-block;
+	position: absolute;
+	left: -8px;
+	border-top: 8px solid transparent;
+	border-right:  8px solid black;
+	border-left: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+}
+#pause{
+	height: 16px;
+	width:2px;
+	border-left: 6px solid black;
+	border-right: 6px solid black;
+}
+#nextSong{
+	height: 16px;
+	border-right:3px solid black;
+	position: relative;
+}
+#nextSong:before{
+	content: "";
+	width: 1px;
+	height: 1px;
+	display: inline-block;
+	position: absolute;
+	left:-8px;
+	border-left: 8px solid black;
+	border-right: 8px solid transparent;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+}
+
+@media screen and (max-width: 64em) {
+	.sm-hide {
+		display:none;
+	}
+	i.sm-hide{
+		display: none;
+	}
+	.songItem div:nth-child(3){
+		text-align: right;
+	}
+	#album{
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		flex:1 0 auto;
+	}
+	.songItem :nth-child(2n){
+		display: none;
+	}
+	.songItem div{
+		flex:0 1 50%;
+	}
+	.songItem{
+		justify-content: space-between;
+	}
+	#buttons{
+		justify-content: space-around;
+	}
+	#album img{
+		margin-right: 0;
+		width: 30%;
+		min-width: 300px;
+	}
+}
